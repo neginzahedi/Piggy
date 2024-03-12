@@ -2,8 +2,6 @@
 //  PiggyApp.swift
 //  Piggy
 //
-//  Created by Negin Zahedi on 2024-03-11.
-//
 
 import SwiftUI
 import SwiftData
@@ -12,7 +10,7 @@ import SwiftData
 struct PiggyApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            Transaction.self,
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
