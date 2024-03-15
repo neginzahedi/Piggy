@@ -1,12 +1,12 @@
 //
-//  ContentView.swift
+//  DashboardView.swift
 //  Piggy
 //
 
 import SwiftUI
 import SwiftData
 
-struct ContentView: View {
+struct DashboardView: View {
     
     // MARK: Properties
     @Environment(\.modelContext) private var modelContext
@@ -47,7 +47,7 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    DashboardView()
         .modelContainer(for: Transaction.self, inMemory: true)
 }
 

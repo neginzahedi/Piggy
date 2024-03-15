@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F71C3A32B9FBDA500AF8485 /* PiggyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F71C3A22B9FBDA500AF8485 /* PiggyApp.swift */; };
-		0F71C3A52B9FBDA500AF8485 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F71C3A42B9FBDA500AF8485 /* ContentView.swift */; };
+		0F71C3A52B9FBDA500AF8485 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F71C3A42B9FBDA500AF8485 /* DashboardView.swift */; };
 		0F71C3A72B9FBDA500AF8485 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F71C3A62B9FBDA500AF8485 /* Transaction.swift */; };
 		0F71C3A92B9FBDA600AF8485 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F71C3A82B9FBDA600AF8485 /* Assets.xcassets */; };
 		0F71C3AC2B9FBDA600AF8485 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F71C3AB2B9FBDA600AF8485 /* Preview Assets.xcassets */; };
@@ -37,7 +37,7 @@
 /* Begin PBXFileReference section */
 		0F71C39F2B9FBDA500AF8485 /* Piggy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Piggy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F71C3A22B9FBDA500AF8485 /* PiggyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiggyApp.swift; sourceTree = "<group>"; };
-		0F71C3A42B9FBDA500AF8485 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0F71C3A42B9FBDA500AF8485 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		0F71C3A62B9FBDA500AF8485 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		0F71C3A82B9FBDA600AF8485 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F71C3AB2B9FBDA600AF8485 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -97,7 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				0F71C3A22B9FBDA500AF8485 /* PiggyApp.swift */,
-				0F71C3A42B9FBDA500AF8485 /* ContentView.swift */,
+				0F71C3A42B9FBDA500AF8485 /* DashboardView.swift */,
 				0F71C3A62B9FBDA500AF8485 /* Transaction.swift */,
 				0F71C3A82B9FBDA600AF8485 /* Assets.xcassets */,
 				0F71C3AA2B9FBDA600AF8485 /* Preview Content */,
@@ -260,7 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F71C3A52B9FBDA500AF8485 /* ContentView.swift in Sources */,
+				0F71C3A52B9FBDA500AF8485 /* DashboardView.swift in Sources */,
 				0F71C3A72B9FBDA500AF8485 /* Transaction.swift in Sources */,
 				0F71C3A32B9FBDA500AF8485 /* PiggyApp.swift in Sources */,
 			);
