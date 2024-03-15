@@ -42,6 +42,16 @@ struct DashboardView: View {
             }
             .navigationTitle("Dashboard")
             .fontDesign(.rounded)
+            .toolbar{
+                ToolbarItem {
+                    NavigationLink {
+                        AddTransactionView()
+                    } label: {
+                        Image(systemName: "plus")
+
+                    }
+                }
+            }
         }
     }
 }
@@ -70,29 +80,5 @@ struct CardView: View {
         .padding(.vertical, 40)
         .background(cardViewColor)
         .cornerRadius(10)
-    }
-}
-
-// MARK: - RecentTransactionView
-struct RecentTransactionView: View {
-    
-    // MARK: Properties
-    var transaction: Transaction
-    
-    // MARK: Body
-    var body: some View {
-        NavigationLink {
-            Text("\(transaction.title)")
-        } label: {
-            HStack{
-                Text("\(transaction.title)")
-            }
-            .bold()
-            .frame(maxWidth: .infinity)
-            .padding(.vertical, 10)
-            .background(Color.blue.opacity(0.5))
-            .cornerRadius(10)
-            .foregroundStyle(.black)
-        }
     }
 }

@@ -15,6 +15,8 @@
 		0F71C3B62B9FBDA700AF8485 /* PiggyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F71C3B52B9FBDA700AF8485 /* PiggyTests.swift */; };
 		0F71C3C02B9FBDA700AF8485 /* PiggyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F71C3BF2B9FBDA700AF8485 /* PiggyUITests.swift */; };
 		0F71C3C22B9FBDA700AF8485 /* PiggyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F71C3C12B9FBDA700AF8485 /* PiggyUITestsLaunchTests.swift */; };
+		0FE1FC242BA3FDDA002489C1 /* AddTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE1FC232BA3FDDA002489C1 /* AddTransactionView.swift */; };
+		0FE1FC262BA4AEDE002489C1 /* RecentTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE1FC252BA4AEDE002489C1 /* RecentTransactionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		0F71C3BB2B9FBDA700AF8485 /* PiggyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PiggyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F71C3BF2B9FBDA700AF8485 /* PiggyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiggyUITests.swift; sourceTree = "<group>"; };
 		0F71C3C12B9FBDA700AF8485 /* PiggyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiggyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0FE1FC232BA3FDDA002489C1 /* AddTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionView.swift; sourceTree = "<group>"; };
+		0FE1FC252BA4AEDE002489C1 /* RecentTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentTransactionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 				0F71C3A22B9FBDA500AF8485 /* PiggyApp.swift */,
 				0F71C3A42B9FBDA500AF8485 /* DashboardView.swift */,
 				0F71C3A62B9FBDA500AF8485 /* Transaction.swift */,
+				0FE1FC232BA3FDDA002489C1 /* AddTransactionView.swift */,
+				0FE1FC252BA4AEDE002489C1 /* RecentTransactionView.swift */,
 				0F71C3A82B9FBDA600AF8485 /* Assets.xcassets */,
 				0F71C3AA2B9FBDA600AF8485 /* Preview Content */,
 			);
@@ -261,6 +267,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F71C3A52B9FBDA500AF8485 /* DashboardView.swift in Sources */,
+				0FE1FC262BA4AEDE002489C1 /* RecentTransactionView.swift in Sources */,
+				0FE1FC242BA3FDDA002489C1 /* AddTransactionView.swift in Sources */,
 				0F71C3A72B9FBDA500AF8485 /* Transaction.swift in Sources */,
 				0F71C3A32B9FBDA500AF8485 /* PiggyApp.swift in Sources */,
 			);
