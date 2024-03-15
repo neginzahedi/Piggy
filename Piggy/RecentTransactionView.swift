@@ -19,7 +19,7 @@ struct RecentTransactionView: View {
             Text("\(transaction.title)")
         } label: {
             HStack{
-                Image(systemName: "house")
+                Image(systemName: getSystemImageName(for: transaction.category))
                     .font(.title2)
                     .padding(10)
                     .background(Color.blue.opacity(0.5))
@@ -53,6 +53,23 @@ struct RecentTransactionView: View {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MMM d, yyyy"
         return dateFormatter.string(from: date)
+    }
+    
+    func getSystemImageName(for category: String) -> String {
+        if transaction.type == "Income"{
+            if let transactionCategory = TransactionCategory.IncomeCategory(rawValue: category) {
+                return transactionCategory.systemImageName
+            } else {
+                return "questionmark.circle" // Default image name for unknown category
+            }
+        } else {
+            if let transactionCategory = TransactionCategory.ExpenseCategory(rawValue: category) {
+                return transactionCategory.systemImageName
+            } else {
+                return "questionmark.circle" // Default image name for unknown category
+            }
+        }
+        
     }
 }
 
