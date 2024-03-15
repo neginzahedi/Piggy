@@ -17,6 +17,8 @@
 		0F71C3C22B9FBDA700AF8485 /* PiggyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F71C3C12B9FBDA700AF8485 /* PiggyUITestsLaunchTests.swift */; };
 		0FE1FC242BA3FDDA002489C1 /* AddTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE1FC232BA3FDDA002489C1 /* AddTransactionView.swift */; };
 		0FE1FC262BA4AEDE002489C1 /* RecentTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE1FC252BA4AEDE002489C1 /* RecentTransactionView.swift */; };
+		0FE1FC282BA4C3DD002489C1 /* AddTransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE1FC272BA4C3DD002489C1 /* AddTransactionViewModel.swift */; };
+		0FE1FC2A2BA4C52F002489C1 /* TransactionEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE1FC292BA4C52F002489C1 /* TransactionEnums.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		0F71C3C12B9FBDA700AF8485 /* PiggyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiggyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0FE1FC232BA3FDDA002489C1 /* AddTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionView.swift; sourceTree = "<group>"; };
 		0FE1FC252BA4AEDE002489C1 /* RecentTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentTransactionView.swift; sourceTree = "<group>"; };
+		0FE1FC272BA4C3DD002489C1 /* AddTransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionViewModel.swift; sourceTree = "<group>"; };
+		0FE1FC292BA4C52F002489C1 /* TransactionEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionEnums.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 				0F71C3A62B9FBDA500AF8485 /* Transaction.swift */,
 				0FE1FC232BA3FDDA002489C1 /* AddTransactionView.swift */,
 				0FE1FC252BA4AEDE002489C1 /* RecentTransactionView.swift */,
+				0FE1FC272BA4C3DD002489C1 /* AddTransactionViewModel.swift */,
+				0FE1FC292BA4C52F002489C1 /* TransactionEnums.swift */,
 				0F71C3A82B9FBDA600AF8485 /* Assets.xcassets */,
 				0F71C3AA2B9FBDA600AF8485 /* Preview Content */,
 			);
@@ -266,7 +272,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FE1FC2A2BA4C52F002489C1 /* TransactionEnums.swift in Sources */,
 				0F71C3A52B9FBDA500AF8485 /* DashboardView.swift in Sources */,
+				0FE1FC282BA4C3DD002489C1 /* AddTransactionViewModel.swift in Sources */,
 				0FE1FC262BA4AEDE002489C1 /* RecentTransactionView.swift in Sources */,
 				0FE1FC242BA3FDDA002489C1 /* AddTransactionView.swift in Sources */,
 				0F71C3A72B9FBDA500AF8485 /* Transaction.swift in Sources */,
