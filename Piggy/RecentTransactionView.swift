@@ -2,18 +2,18 @@
 //  RecentTransactionView.swift
 //  Piggy
 //
-//  Created by Negin Zahedi on 2024-03-15.
-//
 
 import SwiftUI
 
-// MARK: - RecentTransactionView
 struct RecentTransactionView: View {
     
-    // MARK: Properties
+    // MARK: - Properties
+    
+    @StateObject private var viewModel = TransactionManager.shared
     var transaction: Transaction
     
-    // MARK: Body
+    // MARK: - Body
+    
     var body: some View {
         NavigationLink {
             Text("\(transaction.title)")
@@ -49,12 +49,16 @@ struct RecentTransactionView: View {
         }
     }
     
+    // MARK: - Helper Functions
+    
+    // Format date for display
     func formattedDate(date: Date) -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MMM d, yyyy"
         return dateFormatter.string(from: date)
     }
     
+    // Get system image name based on transaction category
     func getSystemImageName(for category: String) -> String {
         if transaction.type == "Income"{
             if let transactionCategory = TransactionCategory.IncomeCategory(rawValue: category) {
@@ -69,10 +73,10 @@ struct RecentTransactionView: View {
                 return "questionmark.circle" // Default image name for unknown category
             }
         }
-        
     }
 }
 
+// MARK: - Preview
 
 #Preview {
     RecentTransactionView(transaction: Transaction(title: "Netflix sub", amount: 9.99, type: "Expense", category: "Home", date: Date(), note: "some note here"))

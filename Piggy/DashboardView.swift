@@ -8,11 +8,13 @@ import SwiftData
 
 struct DashboardView: View {
     
-    // MARK: Properties
+    // MARK: - Properties
+    
     @Environment(\.modelContext) private var modelContext
     @Query private var transactions: [Transaction]
     
-    // MARK: Body
+    // MARK: - Body
+    
     var body: some View {
         NavigationStack {
             VStack{
@@ -31,10 +33,15 @@ struct DashboardView: View {
                         Text("Recent Transaction")
                         Spacer()
                     }
-                    ScrollView{
-                        ForEach(transactions) { transaction in
+                    List{
+                        ForEach(transactions.sorted(by: {$0.date > $1.date})) { transaction in
                             RecentTransactionView(transaction: transaction)
                         }
+                        .onDelete(perform: { offsets in
+                            for index in offsets {
+                                modelContext.delete(transactions[index])
+                            }
+                        })
                     }
                 }
                 .padding()
@@ -48,7 +55,7 @@ struct DashboardView: View {
                         AddTransactionView()
                     } label: {
                         Image(systemName: "plus")
-
+                        
                     }
                 }
             }
@@ -56,6 +63,7 @@ struct DashboardView: View {
     }
 }
 
+// MARK: - Preview
 #Preview {
     DashboardView()
         .modelContainer(for: Transaction.self, inMemory: true)

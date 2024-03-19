@@ -10,13 +10,14 @@ import SwiftUI
 struct AddTransactionView: View {
     
     // MARK: - Properties
-    @StateObject private var viewModel = AddTransactionViewModel()
     
+    @Environment(\.modelContext) private var modelContext
     @Environment(\.dismiss) private var dismiss
     
-    
+    @StateObject private var viewModel = TransactionManager.shared
     
     // MARK: - Body
+    
     var body: some View {
         VStack{
             Text("Enter the details  of the transaction to help you track your spending.")
@@ -80,15 +81,18 @@ struct AddTransactionView: View {
                 .padding(.vertical, 10)
             }
             .padding()
-            
-            Button("Add New Transaction") {
-                viewModel.saveTransaction()
-                dismiss()
-            }
-            .disabled(viewModel.transaction.title.isEmpty)
         }
         
         .navigationTitle("New Transaction")
+        .toolbar{
+            ToolbarItem {
+                Button("Add") {
+                    modelContext.insert(viewModel.transaction)
+                    dismiss()
+                }
+                .disabled(viewModel.transaction.title.isEmpty)
+            }
+        }
     }
     
 }
